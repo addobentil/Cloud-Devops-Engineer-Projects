@@ -1,11 +1,10 @@
-````markdown
 # Weather Dashboard - 30 Days DevOps Challenge
 
 ## Project Overview
 
 The Weather Dashboard project demonstrates core DevOps principles by integrating **cloud computing**, **API development**, and **Python programming**. It fetches real-time weather data, processes it, and securely stores it in **AWS S3**. This project emphasizes modularity, security, and scalability.
 
----
+![My Image](image.png "Architectural diagram")
 
 ## Features
 
@@ -14,8 +13,6 @@ The Weather Dashboard project demonstrates core DevOps principles by integrating
 - **Multi-City Tracking**: Monitors weather data for multiple cities.
 - **Timestamping**: Adds historical tracking with precise timestamps.
 - **Environment Security**: Uses `.env` files to manage API keys and sensitive credentials.
-
----
 
 ## Technical Architecture
 
@@ -26,8 +23,6 @@ The Weather Dashboard project demonstrates core DevOps principles by integrating
   - `boto3` - AWS SDK for Python
   - `python-dotenv` - Environment variable management
   - `requests` - HTTP requests handling
-
----
 
 ## Project Structure
 
@@ -40,9 +35,6 @@ weather-dashboard/
 ├── .gitignore
 ├── requirements.txt
 ```
-````
-
----
 
 ## Setup Instructions
 
@@ -89,20 +81,22 @@ Execute the script to fetch and store weather data:
 python src/weather_dashboard.py
 ```
 
----
+## Example Output
+
+When the script runs, the output includes fetched weather data and success messages:
+
+![My Image](Upload-success.png "Success")
 
 ## Key Functionalities
 
-1. **Fetch Weather Data**  
+1. **Fetch Weather Data**
    Retrieves temperature, humidity, and conditions using the OpenWeather API.
 
-2. **Create AWS S3 Bucket**  
+2. **Create AWS S3 Bucket**
    Automatically creates the specified S3 bucket if it does not already exist.
 
-3. **Save Data to S3**  
+3. **Save Data to S3**
    Saves weather data in JSON format, organized by city and timestamp.
-
----
 
 ## What I Learned
 
@@ -112,8 +106,6 @@ python src/weather_dashboard.py
 - **Version Control**: Applied Git for iterative development.
 - **Cloud Automation**: Integrated and automated cloud resource usage.
 
----
-
 ## Future Enhancements
 
 1. **Weather Forecasting**: Add prediction capabilities using advanced APIs.
@@ -121,30 +113,6 @@ python src/weather_dashboard.py
 3. **Dynamic City Addition**: Enable user input to track new cities dynamically.
 4. **Automated Testing**: Add unit and integration tests for robust performance.
 5. **CI/CD Integration**: Implement a pipeline for continuous deployment.
-
----
-
-## Example Output
-
-When the script runs, the output includes fetched weather data and success messages:
-
-```plaintext
-Fetching weather for Philadelphia...
-Temperature: 75°F
-Feels like: 73°F
-Humidity: 60%
-Conditions: Clear sky
-Weather data for Philadelphia saved to S3!
-
-Fetching weather for Seattle...
-Temperature: 65°F
-Feels like: 63°F
-Humidity: 70%
-Conditions: Light rain
-Weather data for Seattle saved to S3!
-```
-
----
 
 ## Troubleshooting
 
@@ -165,12 +133,23 @@ Weather data for Seattle saved to S3!
 4. **API Errors**
    - Double-check your OpenWeather API key and usage limits.
 
----
+## Verify the Output
+
+To confirm the data has been saved correctly, navigate to your AWS S3 console and check the contents of your bucket. You should see JSON files organized by city and timestamp.
+
+![My Image](s3-bucket-data.png "Objects created")
+![My Image](s3-bucket-data-json.png "Objects created")
+
+## Clean Up
+
+To avoid unnecessary charges, delete the S3 bucket after verifying the data.
+
+## Acknowledgments
+
+Special thanks to **[DeShae Lyda](https://www.linkedin.com/in/deshae-lyda/)** or **[ShaeInTheCloud](https://www.youtube.com/watch?v=A95XBJFOqjw)** and the other Cloud Engineers involved for the guidance and inspiration to embark on this exciting challenge. Your support and expertise have been instrumental in making this project a reality.
 
 ## Conclusion
 
 The Weather Dashboard project demonstrates the power of combining **cloud computing**, **API integration**, and **Python development**. By leveraging **AWS S3** and **OpenWeather API**, this system provides a scalable, secure, and user-friendly solution for tracking weather data.
 
 This project serves as a solid foundation for exploring **DevOps practices**, with room for enhancements like forecasting, data visualization, and CI/CD pipelines. Whether you're a beginner or an experienced developer, this system offers a comprehensive introduction to **cloud-based development**.
-
-**Happy Coding!**
