@@ -6,7 +6,9 @@ Day 1 - Creating a Weather Dashboard using AWS S3 buckets and OpenWeather API
 
 The Weather Dashboard project demonstrates core DevOps principles by integrating **cloud computing**, **API development**, and **Python programming**. It fetches real-time weather data, processes it, and securely stores it in **AWS S3**. This project emphasizes modularity, security, and scalability.
 
-![My Image](image.png "Architectural diagram")
+## Architectural Diagram
+
+![My Image](Weather-diagram.drawio.png "Architectural diagram")
 
 ## Features
 
