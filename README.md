@@ -6,7 +6,7 @@ Welcome to my **Cloud DevOps Engineer** repository! This repository serves as a 
 
 This repository highlights various **Cloud & DevOps** projects, including:
 
-- **Building Strong Foundations** – focuses on developing a robust foundation in Cloud & DevOps practices.
+- **Building Strong Foundations** – focusing on developing a robust foundation in Cloud & DevOps practices.
 - **Infrastructure as Code (IaC)** – Automating cloud infrastructure with Terraform & AWS CloudFormation.
 - **CI/CD Pipelines** – Implementing GitHub Actions, Jenkins, and other automation tools.
 - **Cloud Deployments** – Deploying scalable applications on AWS.
