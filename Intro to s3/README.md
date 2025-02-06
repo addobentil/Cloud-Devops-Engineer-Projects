@@ -24,21 +24,21 @@ This guide provides step-by-step instructions on creating an S3 bucket, uploadin
 5. Click **Create**.
 6. Your newly created bucket will now appear in the bucket list.
 
-![My Image](awsS3bucket.png "Create bucket")
+![My Image](./images/awsS3bucket.png "Create bucket")
 
 ## 2. Uploading an Object to the Bucket
 
 1. Open the S3 bucket you just created.
 2. Click **Upload** and select a file (e.g., `textSample.txt`).
 
-![My Image](SampleText.png "Plain text")
+![My Image](./images/SampleText.png "Plain text")
 
 ---
 
 3. Click **Upload** to complete the process.
 4. Once uploaded, the object will be listed in the bucket.
 
-![My Image](imgUpload.png "Img upload")
+![My Image](./images/imgUpload.png "Img upload")
 
 ---
 
@@ -52,7 +52,7 @@ This guide provides step-by-step instructions on creating an S3 bucket, uploadin
 4. Uncheck **"Block all public access"** options.
 5. Click **Save**.
 
-![My Image](bucket%20access.png "edit bucket access")
+![My Image](./images/bucket%20access.png "edit bucket access")
 
 ### Add a Bucket Policy to Allow Public Access
 
@@ -75,7 +75,7 @@ This guide provides step-by-step instructions on creating an S3 bucket, uploadin
    Click Save Changes.
    ```
 
-   ![My Image](bucket%20policy.png "Bucket policy img")
+   ![My Image](./images/bucket%20policy.png "Bucket policy img")
 
 ## 4. Testing Object Access
 
@@ -85,7 +85,7 @@ This guide provides step-by-step instructions on creating an S3 bucket, uploadin
 4.  Paste the URL and press Enter.
 5.  If configured correctly, the object should now be publicly accessible.
 
-![My Image](file-success.png "file url")
+![My Image](./images/file-success.png "file url")
 
 ## Conclusion
 
