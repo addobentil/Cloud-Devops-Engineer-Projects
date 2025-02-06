@@ -66,7 +66,7 @@ Prerequisites
 2. Build the docker image:
 
 ```bash
-    docker build --platform linux/amd64 -t sports-api .
+    docker build --platform linux/amd64 -t sports-api.
 ```
 
 3. Run and Test the Docker container:
@@ -87,6 +87,7 @@ Prerequisites
     aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com
 
     docker tag sports-api:latest <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/sports-api:sports-api-latest
+
     docker push <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/sports-api:sports-api-latest
 ```
 
@@ -98,10 +99,3 @@ Prerequisites
     terraform plan
     terraform apply
 ```
-
-## Contact
-
-For questions or feedback please contact;
-
-- [email](mailto:oyogbeche@gmail.com)
-- [LinkedIn](https://www.linkedin.com/in/oyameogbeche/)

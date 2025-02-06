@@ -61,7 +61,7 @@ aws ecr create-repository --repository-name sports-api --region us-east-1
 ```bash
 aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com
 
-docker build --platform linux/amd64 -t sports-api .
+docker build --platform linux/amd64 -t sports-api.
 
 docker tag sports-api:latest <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/sports-api:sports-api-latest
 
