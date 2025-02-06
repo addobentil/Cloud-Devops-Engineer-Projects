@@ -16,7 +16,7 @@ This project demonstrates building a containerized API management system for que
 
 ## **Technical Architecture**
 
-## ![Architecture](https://github.com/addobentil/sports-api-management-system/SPORTS%20API.jpg)
+## ![Architecture](./SPORTS%20API.jpg)
 
 ## **Technologies**
 
